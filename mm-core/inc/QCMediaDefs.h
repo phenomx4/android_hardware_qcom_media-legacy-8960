@@ -1,9 +1,5 @@
 /*
-<<<<<<< HEAD
  * Copyright (c) 2012 - 2013, The Linux Foundation. All rights reserved.
-=======
- * Copyright (c) 2012, The Linux Foundation. All rights reserved.
->>>>>>> 17e5644... mm-core: Add QC specific MetaData and MediaDefs
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -54,7 +50,6 @@ extern const char *MEDIA_MIMETYPE_AUDIO_DTS;
 extern const char *MEDIA_MIMETYPE_AUDIO_DTS_LBR;
 extern const char *MEDIA_MIMETYPE_AUDIO_EAC3;
 extern const char *MEDIA_MIMETYPE_AUDIO_AMR_WB_PLUS;
-<<<<<<< HEAD
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCMPEG2TS;
 extern const char *MEDIA_MIMETYPE_VIDEO_HEVC;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCMPEG;
@@ -66,8 +61,6 @@ extern const char *MEDIA_MIMETYPE_CONTAINER_QCMPEG2PS;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCMPEG4;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCMATROSKA;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCOGG;
-=======
->>>>>>> 17e5644... mm-core: Add QC specific MetaData and MediaDefs
 
 }  // namespace android
 

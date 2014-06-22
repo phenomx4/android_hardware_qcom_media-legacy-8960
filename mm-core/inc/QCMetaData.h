@@ -1,9 +1,5 @@
 /*
-<<<<<<< HEAD
  * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
-=======
- * Copyright (c) 2012, The Linux Foundation. All rights reserved.
->>>>>>> 17e5644... mm-core: Add QC specific MetaData and MediaDefs
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -40,10 +36,7 @@ namespace android {
 enum {
     kKeyAacCodecSpecificData = 'nacc' , // for native aac files
 
-<<<<<<< HEAD
 #if 0
-=======
->>>>>>> 17e5644... mm-core: Add QC specific MetaData and MediaDefs
     kKeyRawCodecSpecificData = 'rcsd',  // raw data - added to support mmParser
     kKeyDivXVersion          = 'DivX',  // int32_t
     kKeyDivXDrm              = 'QDrm',  // void *
@@ -55,19 +48,13 @@ enum {
     kKeyWMAFormatTag         = 'fmtt',  // int64_t
     kKeyWMABitspersample     = 'bsps',  // int64_t
     kKeyWMAVirPktSize        = 'vpks',  // int64_t
-<<<<<<< HEAD
 #endif
-=======
->>>>>>> 17e5644... mm-core: Add QC specific MetaData and MediaDefs
     kKeyWMAChannelMask       = 'chmk',  // int32_t
 
     kKeyFileFormat           = 'ffmt',  // cstring
 
     kkeyAacFormatAdif        = 'adif',  // bool (int32_t)
-<<<<<<< HEAD
     kKeyInterlace            = 'intL',  // bool (int32_t)
-=======
->>>>>>> 17e5644... mm-core: Add QC specific MetaData and MediaDefs
     kkeyAacFormatLtp         = 'ltp',
 
 
@@ -76,17 +63,11 @@ enum {
 
     //Extractor sets this
     kKeyUseArbitraryMode     = 'ArbM',  //bool (int32_t)
-<<<<<<< HEAD
     kKeySmoothStreaming      = 'ESmS',  //bool (int32_t)
     kKeyHFR                  = 'hfr ',  // int32_t
 };
 
 #if 0
-=======
-};
-
-
->>>>>>> 17e5644... mm-core: Add QC specific MetaData and MediaDefs
 enum {
     kTypeDivXVer_3_11,
     kTypeDivXVer_4,
@@ -98,10 +79,7 @@ enum {
     kTypeWMAPro,
     kTypeWMALossLess,
 };
-<<<<<<< HEAD
 #endif
-=======
->>>>>>> 17e5644... mm-core: Add QC specific MetaData and MediaDefs
 
 }  // namespace android
 
