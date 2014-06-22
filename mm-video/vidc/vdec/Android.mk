@@ -58,14 +58,14 @@ libmm-vdec-inc          += $(OMX_VIDEO_PATH)/vidc/common/inc
 libmm-vdec-inc          += hardware/qcom/media-legacy/mm-core/inc
 #DRM include - Interface which loads the DRM library
 libmm-vdec-inc	        += $(OMX_VIDEO_PATH)/DivxDrmDecrypt/inc
-libmm-vdec-inc          += hardware/qcom/display-caf/libgralloc
+libmm-vdec-inc          += hardware/qcom/media-legacy/mm-video/vidc/vdec/inc/display-inc/libgralloc
 libmm-vdec-inc          += hardware/qcom/display-caf/libgenlock
 libmm-vdec-inc          += frameworks/native/include/media/openmax
 libmm-vdec-inc          += frameworks/native/include/media/hardware
 libmm-vdec-inc          += hardware/qcom/media-legacy/libc2dcolorconvert
 libmm-vdec-inc          += hardware/qcom/display-caf/libcopybit
 libmm-vdec-inc          += frameworks/av/include/media/stagefright
-libmm-vdec-inc          += hardware/qcom/display-caf/libqservice
+libmm-vdec-inc          += hardware/qcom/media-legacy/mm-video/vidc/vdec/inc/display-inc/libqservice
 
 
 LOCAL_MODULE                    := libOmxVdec

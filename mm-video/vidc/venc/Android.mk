@@ -48,11 +48,11 @@ libmm-venc-inc      := $(LOCAL_PATH)/inc
 libmm-venc-inc      += $(OMX_VIDEO_PATH)/vidc/common/inc
 libmm-venc-inc      += hardware/qcom/media-legacy/mm-core/inc
 libmm-venc-inc      += hardware/qcom/media-legacy/libstagefrighthw
-libmm-venc-inc      += hardware/qcom/display-caf/libgralloc
+libmm-venc-inc      += hardware/qcom/media-legacy/mm-video/vidc/vdec/inc/display-inc/libgralloc
 libmm-venc-inc      += frameworks/native/include/media/hardware
 libmm-venc-inc      += frameworks/native/include/media/openmax
 libmm-venc-inc      += hardware/qcom/media-legacy/libc2dcolorconvert
-libmm-venc-inc      += hardware/qcom/display-legacy/libcopybit
+libmm-venc-inc      += hardware/qcom/display-caf/libcopybit
 libmm-venc-inc      += frameworks/av/include/media/stagefright
 
 
@@ -89,7 +89,7 @@ mm-venc-test720p-inc            := $(TARGET_OUT_HEADERS)/mm-core
 mm-venc-test720p-inc            += $(LOCAL_PATH)/inc
 mm-venc-test720p-inc            += $(OMX_VIDEO_PATH)/vidc/common/inc
 mm-venc-test720p-inc            += hardware/qcom/media-legacy/mm-core/inc
-mm-venc-test720p-inc            += hardware/qcom/display-caf/libgralloc
+mm-venc-test720p-inc            += hardware/qcom/media-legacy/mm-video/vidc/vdec/inc/display-inc/libgralloc
 
 LOCAL_MODULE                    := mm-venc-omx-test720p
 LOCAL_MODULE_TAGS               := optional

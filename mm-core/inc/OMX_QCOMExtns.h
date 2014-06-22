@@ -250,7 +250,7 @@ enum OMX_QCOM_COLOR_FORMATTYPE
  *  interleaved V and U pixels. V and U pixels are sub-sampled
  *  by a factor of two both horizontally and vertically.
  */
-    OMX_QCOM_COLOR_FormatYVU420SemiPlanar = 0x7FA30C00,
+    QOMX_COLOR_FormatYVU420SemiPlanar = 0x7FA30C00,
     QOMX_COLOR_FormatYVU420PackedSemiPlanar32m4ka,
     QOMX_COLOR_FormatYUV420PackedSemiPlanar16m2ka,
     QOMX_COLOR_FormatYUV420PackedSemiPlanar64x32Tile2m8ka,
@@ -267,7 +267,8 @@ enum OMX_QCOM_VIDEO_CODINGTYPE
     QOMX_VIDEO_CodingDivx = 0x7FA30C02,     /**< Value when coding is Divx */
     QOMX_VIDEO_CodingSpark = 0x7FA30C03,     /**< Value when coding is Sorenson Spark */
     QOMX_VIDEO_CodingVp = 0x7FA30C04,
-    QOMX_VIDEO_CodingVp8 = 0x7FA30C05
+    QOMX_VIDEO_CodingVp8 = 0x7FA30C05,
+    QOMX_VIDEO_CodingHevc = 0x7FA30C06
 };
 
 enum OMX_QCOM_EXTN_INDEXTYPE
@@ -358,6 +359,11 @@ enum OMX_QCOM_EXTN_INDEXTYPE
     OMX_QcomIndexEnableSliceDeliveryMode = 0x7F00001F,
 
     OMX_QcomIndexParamSequenceHeaderWithIDR = 0x7F000020,
+
+    OMX_QcomIndexEnableExtnUserData = 0x7F000021,
+
+    /*"OMX.QCOM.index.param.video.EnableSmoothStreaming"*/
+    OMX_QcomIndexParamEnableSmoothStreaming = 0x7F000022,
 };
 
 /**
@@ -586,6 +592,12 @@ typedef struct OMX_QCOM_ASPECT_RATIO
    OMX_U32 aspectRatioY;
 } OMX_QCOM_ASPECT_RATIO;
 
+typedef struct OMX_QCOM_DISPLAY_ASPECT_RATIO
+{
+   OMX_U32 displayVerticalSize;
+   OMX_U32 displayHorizontalSize;
+} OMX_QCOM_DISPLAY_ASPECT_RATIO;
+
 typedef struct OMX_QCOM_FRAME_PACK_ARRANGEMENT
 {
   OMX_U32 nSize;
@@ -618,6 +630,7 @@ typedef struct OMX_QCOM_EXTRADATA_FRAMEINFO
    OMX_QCOM_INTERLACETYPE interlaceType;
    OMX_QCOM_PANSCAN       panScan;
    OMX_QCOM_ASPECT_RATIO  aspectRatio;
+   OMX_QCOM_DISPLAY_ASPECT_RATIO displayAspectRatio;
    OMX_U32                nConcealedMacroblocks;
    OMX_U32                nFrameRate;
 } OMX_QCOM_EXTRADATA_FRAMEINFO;
@@ -659,7 +672,9 @@ typedef enum OMX_QCOM_EXTRADATATYPE
    OMX_ExtraDataVideoEncoderSliceInfo = 0x7F000005,
    OMX_ExtraDataConcealMB = 0x7F000006,
    OMX_ExtraDataInterlaceFormat = 0x7F000007,
-   OMX_ExtraDataPortDef = 0x7F000008
+   OMX_ExtraDataPortDef = 0x7F000008,
+   OMX_ExtraDataMP2ExtnData = 0x7F000009,
+   OMX_ExtraDataMP2UserData = 0x7F00000a
 } OMX_QCOM_EXTRADATATYPE;
 
 typedef struct  OMX_STREAMINTERLACEFORMATTYPE {
